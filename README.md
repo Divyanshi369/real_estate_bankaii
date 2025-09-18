@@ -35,4 +35,17 @@ Supports multiple user roles: **Admin, Manager, Supervisor, and Worker**, each w
 ---
 
 ## 📂 Project Structure
-
+estate/
+├── config/ # Database connection config
+├── includes/ # Auth + helper functions
+├── public/ # Web root (all accessible files)
+│ ├── assets/ # CSS, JS, images
+│ ├── admin/ # Admin dashboard
+│ ├── manager/ # Manager dashboard
+│ ├── supervisor/ # Supervisor dashboard
+│ ├── worker/ # Worker dashboard
+│ ├── index.php # Landing page
+│ └── login.php # Main login page
+├── sql/ # Database schema + helpers
+│ └── database_schema.sql
+└── .htaccess # Security headers + public root
